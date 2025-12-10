@@ -246,9 +246,18 @@ type HuaWei struct {
 	BigTitle string `json:"/message/android/notification/big_title"`
 	BigBody  string `json:"/message/android/notification/big_body"`
 	Category string `json:"/message/android/category"`
+	// 值为int 类型。1 表示华为测试消息，华为每个应用每日可发送该测试消息500条。此测试参数请勿发布至线上。
+	UType string `json:"/message/android//message/android/target_user_type"`
 }
 
 type Vivo struct {
+	//值为int 类型。0 表示正式推送；1 表示测试推送，不填默认为0。测试额度暂无限制。此测试参数请勿发布至线上。
+	PushMode string `json:"/pushMode"`
+}
+
+type Honor struct {
+	//值为int 类型。1 表示测试推送，不填默认为0。荣耀每个应用每日可发送该测试消息1000条。此测试参数请勿发布至线上。
+	TargetUType string `json:"/android/targetUserType"`
 }
 
 type Options struct {
