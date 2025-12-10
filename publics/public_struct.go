@@ -261,5 +261,7 @@ type Honor struct {
 }
 
 type Options struct {
-	HW HuaWei `json:"HW"`
+	HuaWei HuaWei `json:"HW"`
+	Vivo   Vivo   `json:"VV"`
+	Honor  Honor  `json:"HO"`
 }
