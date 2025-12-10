@@ -1,4 +1,4 @@
-module github.com/Cancellara-Y/getui
+module github.com/dacker-soul/getui
 
 go 1.24
 
