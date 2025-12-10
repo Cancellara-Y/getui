@@ -236,8 +236,8 @@ type AndroidChannel struct {
 type Ups struct {
 	Notification *Notification `json:"notification"` // 非必须,通知消息内容，与transmission 二选一，两个都填写时报错
 	TransMission string        `json:"transmission"` // 非必须,透传消息内容，与notification 二选一，两个都填写时报错，长度 ≤ 3072
-	//Options      Options       `json:"options"`
-	Options string `json:"options"`
+	Options      Options       `json:"options"`
+	//Options string `json:"options"`
 }
 
 type HuaWei struct {
